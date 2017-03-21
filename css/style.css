@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nosifer';
+  background: url('http://www.cloudburstproductions.co.uk/wp-content/uploads/2014/09/Blood-splatter.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width: 460px;
+  max-height: 460px;
+  min-width: 460px;
+  min-height: 460px;
+  color: red;
+}
+
+.container {
+  border-left: 1px solid white;
+  padding-left: 10px;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 820px;
+  margin-left: 80px;
+}
+
+nav {
+  background: black;
+  background: rgba(134, 13, 21, 0.3);
+}
+
+nav li {
+  border-left: 1px solid white;
+}
+
+nav li:hover {
+  background: black;
+}
+
+p,
+h2,
+u,
+span,
+a {
+  color: red;
+}
+
+.card {
+  border-radius: 1%;
+  margin-left: 10px;
+  width: 300px;
+}
+
+img {
+  height: 45px;
+  width: 55px;
+}
+
+em {
+  position: fixed;
+  right: 300px;
+  top: 70px;
+}
+
+#box {
+  border: 1px solid red;
+}
+
+#break{
+  display: none;
+}
+
+.card {
+  background: url('https://d2gg9evh47fn9z.cloudfront.net/thumb_COLOURBOX11206446.jpg');
+  width: 500px;
+}
+
+.clicked {
+  border-bottom: 5px groove red;
+}
+
+@media only screen and (max-width: 768px) {
+   em {
+        display: none;
+    }
+  #break{
+    display: initial;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+   nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+   .container {
+        margin-left: 0;
+        max-width: 400px;
+    }
+}
