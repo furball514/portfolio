@@ -11,8 +11,9 @@ $(document).ready(function() {
       'color': 'white'
     });
     $('em').css('display','none');
-    $('p, li, h1, h2, u, span, a, #box').css('color','white')
-  });
+    $('p, li, h1, h2, u, span, a, #box').css('color','white');
+    $('.card').css('background','violet');  
+    });
 
   $('section').hide();
   $('nav li').click(function() {
