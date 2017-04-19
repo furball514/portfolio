@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Nosifer';
-  background: url('http://www.cloudburstproductions.co.uk/wp-content/uploads/2014/09/Blood-splatter.jpg')no-repeat center center fixed;
+  background: url('/blood.jpeg')no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
