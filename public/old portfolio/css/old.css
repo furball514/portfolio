@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Nosifer';
-  background: url('/blood.jpeg')no-repeat center center fixed;
+  background: url("../blood.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -69,7 +69,7 @@ em {
   border: 1px solid red;
 }
 
-#break{
+#break {
   display: none;
 }
 
@@ -83,23 +83,23 @@ em {
 }
 
 @media only screen and (max-width: 768px) {
-   em {
-        display: none;
-    }
-  #break{
+  em {
+    display: none;
+  }
+  #break {
     display: initial;
   }
 }
 
 @media only screen and (max-width: 370px) {
-   nav {
-        display: none;
-    }
+  nav {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 415px) {
-   .container {
-        margin-left: 0;
-        max-width: 400px;
-    }
+  .container {
+    margin-left: 0;
+    max-width: 400px;
+  }
 }
