@@ -24,3 +24,4 @@ const styles = StyleSheet.create({
 //no fonts // no icons
 
 //spinner
+//accessibility
