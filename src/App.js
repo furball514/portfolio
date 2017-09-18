@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
+import { StyleSheet, css } from 'aphrodite';
 import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import Header from './components/Header';
 
 export default class App extends Component {
   render() {
     return (
-      <Fabric style={styles.container}>
-        <div>
-          <h2>Welcome to React</h2>
-        </div>
-        <DefaultButton>
-          <a href={`${process.env.PUBLIC_URL}/old portfolio/oldportfolio.html`}>click here</a>
-        </DefaultButton>
+      <Fabric className={css(styles.container)}>
+        <Header />
       </Fabric>
     );
   }
 }
 
-const styles = {
+const styles = StyleSheet.create({
   container: {
+    display: 'flex',
+    justifyContent: 'center',
     backgroundColor: 'white',
-    fontFamily: 'Arial',
   },
-};
+});
 
 //no fonts // no icons
+
+//spinner
