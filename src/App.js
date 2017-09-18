@@ -1,23 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 
-export default class App extends Component {
-  render() {
-    return (
-      <Fabric className={css(styles.container)}>
-        <Header />
-      </Fabric>
-    );
-  }
-}
+const App = () => (
+  <Fabric className={css(styles.container)}>
+    <Header />
+  </Fabric>
+);
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
     display: 'flex',
     justifyContent: 'center',
     backgroundColor: 'white',
+    fontFamily: 'Source Sans Pro',
   },
 });
 
