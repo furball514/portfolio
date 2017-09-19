@@ -16,9 +16,9 @@ const HeaderText = () => (
 
 const Search = () => <SearchBox className={css(styles.searchBox)} />;
 
-const Control = () => (
+export const Control = () => (
   <div className={css(styles.control)}>
-    <p style={{ color: 'white' }}>Invert colors</p>&nbsp;&nbsp;<Toggle />{' '}
+    <p className={css(styles.white)}>Invert colors</p>&nbsp;&nbsp;&nbsp;<Toggle className={css(styles.toggle)} />{' '}
   </div>
 );
 
@@ -27,7 +27,9 @@ const Header = () => (
     <div className={css(styles.banner)}>
       <HeaderText />
       <Search />
-      <Control />
+      <div className={css(styles.mobileControl)}>
+        <Control />
+      </div>
     </div>
   </header>
 );
