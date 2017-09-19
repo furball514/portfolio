@@ -18,10 +18,6 @@ const styles = StyleSheet.create({
     width: '100%',
     display: 'flex',
     alignItems: 'center',
-    '@media (max-width: 768px)': {
-      //mobile
-      height: '30px',
-    },
   },
   headerText: {
     color: '#fff',
@@ -56,7 +52,7 @@ const styles = StyleSheet.create({
     },
   },
   mobileHeader: {
-    top: '50px',
+    top: '49px',
     height: '30px',
     backgroundColor: '#212121',
     '@media (min-width: 768px)': {
@@ -76,6 +72,11 @@ const styles = StyleSheet.create({
       display: 'none',
     },
   },
+  mobileBanner: {
+    height: '30px',
+  },
 });
+
+//ipad
 
 export default styles;

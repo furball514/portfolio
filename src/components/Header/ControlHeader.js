@@ -5,7 +5,7 @@ import styles from './headerstyles';
 
 const ControlHeader = () => (
   <header className={css(styles.header, styles.mobileHeader)}>
-    <div className={css(styles.banner)}>
+    <div className={css(styles.banner, styles.mobileBanner)}>
       <Control />
     </div>
   </header>
