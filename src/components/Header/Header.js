@@ -16,7 +16,11 @@ const HeaderText = () => (
 
 const Search = () => <SearchBox className={css(styles.searchBox)} />;
 
-const Control = () => <Toggle className={css(styles.control)} />;
+const Control = () => (
+  <div className={css(styles.control)}>
+    <p style={{ color: 'white' }}>Invert colors</p>&nbsp;&nbsp;<Toggle />{' '}
+  </div>
+);
 
 const Header = () => (
   <header className={css(styles.header)}>

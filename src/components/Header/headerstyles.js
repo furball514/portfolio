@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: '19px',
     paddingBottom: 10,
-    fontWeight: 'bold',
   },
   bar: {
     color: '#666',
@@ -41,8 +40,7 @@ const styles = StyleSheet.create({
     marginTop: 6,
   },
   control: {
-    marginLeft: 'auto',
-    marginRight: 30,
+    display: 'flex',
   },
 });
 
