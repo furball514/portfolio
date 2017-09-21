@@ -16,20 +16,20 @@ const HeaderText = () => (
 
 const Search = () => <SearchBox className={css(styles.searchBox)} />;
 
-export const Control = () => (
+const Control = () => (
   <div className={css(styles.control)}>
-    <p className={css(styles.white)}>Invert colors</p>&nbsp;&nbsp;&nbsp;<Toggle className={css(styles.toggle)} />{' '}
+    <p className={css(styles.white)}>Invert colors</p>&nbsp;&nbsp;&nbsp;<Toggle className={css(styles.toggle)} />
   </div>
 );
 
 const Header = () => (
   <header className={css(styles.header)}>
-    <div className={css(styles.banner)}>
+    <div className={css(styles.leftBanner)}>
       <HeaderText />
       <Search />
-      <div className={css(styles.mobileControl)}>
-        <Control />
-      </div>
+    </div>
+    <div className={css(styles.rightBanner)}>
+      <Control />
     </div>
   </header>
 );

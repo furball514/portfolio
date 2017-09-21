@@ -20,9 +20,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     fontFamily: 'Source Sans Pro',
     width: '100%',
+    minWidth: '320px', //
     '@media (max-width: 320px)': {
       width: '320px',
     },
+    margin: '0 auto',
   },
 });
 
