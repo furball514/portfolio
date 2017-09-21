@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     },
   },
   toggle: {
-    marginTop: '9px',
+    marginTop: '8px',
     '@media (max-width: 480px)': {
       margin: 'auto 0',
       transform: 'translate(0,-8px) scale(0.9,0.9)',
