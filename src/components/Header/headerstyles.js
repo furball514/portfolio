@@ -11,9 +11,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',
     height: '50px',
     width: '95%',
-    minWidth: '320px', //
-    '@media (max-width: 320px)': {
-      width: '320px',
+    minWidth: '319px', //
+    '@media (max-width: 319px)': {
+      width: '319px',
     },
   },
   leftBanner: {
@@ -32,9 +32,9 @@ const styles = StyleSheet.create({
       position: 'inherit',
       right: 0,
       top: '50px',
-      minWidth: '320px', //
-      '@media (max-width: 320px)': {
-        width: '320px',
+      minWidth: '319px', //
+      '@media (max-width: 319px)': {
+        width: '319px',
       },
     },
   },

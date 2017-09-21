@@ -88,9 +88,9 @@ const styles = StyleSheet.create({
     '@media (max-width: 480px)': {
       padding: '76px 3% 0',
     },
-    minWidth: '320px', //
-    '@media (max-width: 320px)': {
-      width: '320px',
+    minWidth: '319px', //
+    '@media (max-width: 319px)': {
+      width: '319px',
     },
     margin: '0 auto',
   },
