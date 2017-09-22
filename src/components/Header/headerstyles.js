@@ -29,7 +29,8 @@ const styles = StyleSheet.create({
       backgroundColor: '#212121',
       left: 0,
       padding: '0 2.5%',
-      position: 'inherit',
+      position: 'fixed',
+      zIndex: 600,
       right: 0,
       top: '50px',
       minWidth: '319px', //

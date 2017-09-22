@@ -27,16 +27,23 @@ const styles = StyleSheet.create({
   leftFooter: {
     width: '50%',
     float: 'left',
+    '@media (max-width: 480px)': {
+      transform: 'translate(-10%,0)',
+    },
   },
   rightFooter: {
     width: '50%',
     float: 'right',
+    '@media (max-width: 480px)': {
+      transform: 'translate(-10%,0)',
+    },
   },
   footerText: {
     textAlign: 'center',
     color: '#666',
     fontWeight: 'bold',
     width: '100%',
+    paddingTop: '15px',
     minWidth: '319px', //
     '@media (max-width: 319px)': {
       width: '319px',
@@ -45,6 +52,7 @@ const styles = StyleSheet.create({
   linkList: {
     listStyleType: 'none',
     paddingTop: '12px',
+    marginBottom: '9px',
   },
   link: {
     textDecoration: 'none',
@@ -53,15 +61,19 @@ const styles = StyleSheet.create({
   image: {
     width: '45%',
     height: '20vw',
-    paddingLeft: '55%',
+    transform: 'translate(120%,0)',
     marginBottom: '9px',
+    '@media (max-width: 480px)': {
+      width: '100%',
+      height: '50vw',
+      transform: 'translate(3%,0)',
+    },
   },
   imageContainer: {
     display: 'flex',
     flexDirection: 'column',
     paddingTop: '12px',
     '@media (max-width: 480px)': {
-      paddingTop: '60px',
       paddingLeft: '15px',
       borderLeft: '1px solid #fff',
     },
