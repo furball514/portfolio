@@ -3,7 +3,7 @@ import { StyleSheet, css } from 'aphrodite';
 import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
 import Header from './components/Header/Header';
 import Content from './components/Content';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
 const App = () => (
   <Fabric className={css(styles.container)}>
