@@ -6,6 +6,14 @@
   font-weight: normal;
 }
 
+@font-face {
+  src: local('Source Sans Pro ExtraLight'),
+    url(./Source_Sans_Pro/SourceSansPro-ExtraLight.ttf) format('truetype');
+  font-family: 'Source Sans Pro ExtraLight';
+  font-style: normal;
+  font-weight: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
