@@ -38,12 +38,18 @@ export default NavBar;
 const styles = StyleSheet.create({
   navbar: {
     zIndex: 500,
-    position: 'relative',
+    '@media (max-width: 480px)': {
+      paddingTop: '25px',
+    },
   },
   h1: {
     fontSize: '76px',
     fontFamily: 'Source Sans Pro ExtraLight',
     color: '#f8f8f8',
+    transition: 'font-size 167ms cubic-bezier(.1,.9,.2,1)',
+    ':hover': {
+      fontSize: '24px',
+    },
   },
   ul: {
     listStyleType: 'none',

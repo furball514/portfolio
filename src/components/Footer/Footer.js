@@ -14,7 +14,11 @@ const LeftFooter = () => (
         </a>
       </li>
       <li className={css(styles.listItem)}>
-        <a href="http://scr.im/3nji" target="_blank" className={css(styles.link)}>
+        <a
+          href="http://scr.im/3nji"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={css(styles.link)}>
           <span className="fa fa-envelope" aria-hidden />&nbsp; Mail
         </a>
       </li>
