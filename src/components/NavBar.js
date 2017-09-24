@@ -47,8 +47,6 @@ const styles = StyleSheet.create({
   },
   ul: {
     listStyleType: 'none',
-    display: 'flex',
-    justifyContent: 'space-around',
   },
   link: {
     fontSize: '17px',
@@ -57,6 +55,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     ':hover': {
       fontWeight: '700',
+      fontSize: '18px',
     },
   },
 });

@@ -32,3 +32,10 @@ const styles = StyleSheet.create({
 
 //spinner
 //accessibility
+//~index.css~
+// jtt - fab (mobile)
+
+//searchbox - render content or jump to footer
+//control - invert - colors/themes/styles/desktop
+//about - names,born
+//showcase - gif/iframe - title,description,iconLinks,date

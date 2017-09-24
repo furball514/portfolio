@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from 'aphrodite';
-import { SearchBox } from 'office-ui-fabric-react/lib/SearchBox';
+import { TextField } from 'office-ui-fabric-react/lib/TextField';
 import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
 import styles from './headerstyles';
 import 'font-awesome/css/font-awesome.css';
@@ -14,7 +14,7 @@ const HeaderText = () => (
   </p>
 );
 
-const Search = () => <SearchBox className={css(styles.searchBox)} />;
+const Search = () => <TextField className={css(styles.searchBox)} />;
 
 const Control = () => (
   <div className={css(styles.control)}>
@@ -35,5 +35,3 @@ const Header = () => (
 );
 
 export default Header;
-
-//mobile

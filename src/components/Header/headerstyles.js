@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
       paddingTop: 'none',
       margin: 'auto 0',
       paddingBottom: '12px',
+      color: '#f8f8f8',
     },
   },
   toggle: {
@@ -82,5 +83,3 @@ const styles = StyleSheet.create({
 });
 
 export default styles;
-
-// center on mobile (ctrl)
