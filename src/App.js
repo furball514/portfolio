@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
 
 //no fonts // no icons
 
+//tooltip?, cert-badgeribbon
 //spinner
 //accessibility
 //~index.css~

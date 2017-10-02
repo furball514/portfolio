@@ -10,6 +10,8 @@ const Content = () => (
   <div className={css(styles.content)}>
     <NavBar />
     <AboutSection />
+    <div className={css(styles.shapeTop)} />
+    <div className={css(styles.shapeBottom)} />
     <SkillsSection />
     <ShowcaseSection />
     <ToolsSection />
@@ -30,5 +32,21 @@ const styles = StyleSheet.create({
     '@media (max-width: 480px)': {
       paddingTop: '25px',
     },
+  },
+  shapeTop: {
+    width: '0',
+    height: '0',
+    margin: 'auto',
+    borderTop: '5vw solid #5c005c',
+    borderLeft: '100vw solid transparent',
+    borderRight: '300vw solid transparent',
+  },
+  shapeBottom: {
+    width: '0',
+    height: '0',
+    margin: 'auto',
+    borderBottom: '5vw solid #333',
+    borderLeft: '300vw solid transparent',
+    borderRight: '10vw solid transparent',
   },
 });
