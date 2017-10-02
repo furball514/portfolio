@@ -6,6 +6,7 @@ const SkillsSection = () => (
     <ScrollableAnchor id="skills">
       <h2>Skills</h2>
     </ScrollableAnchor>
+    JavaScript, React, Koa
   </section>
 );
 

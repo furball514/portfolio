@@ -6,6 +6,7 @@ const ShowcaseSection = () => (
     <ScrollableAnchor id="showcase">
       <h2>Showcase</h2>
     </ScrollableAnchor>
+    Simon Game, URL Shortener, TutorPug
   </section>
 );
 

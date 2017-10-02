@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import NavBar from './NavBar';
+import NavBar from './NavBar/NavBar';
 import AboutSection from './Sections/About';
 import SkillsSection from './Sections/Skills';
 import ShowcaseSection from './Sections/Showcase';
