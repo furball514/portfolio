@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from 'aphrodite';
 import styles from './footerstyles';
 import 'font-awesome/css/font-awesome.css';
-import cert from '../../fcccert.jpg';
+import cert from '../../Assets/img/fcccert.jpg';
 
 const LeftFooter = () => (
   <div className={css(styles.leftFooter)}>

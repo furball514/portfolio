@@ -1,6 +1,6 @@
 @font-face {
   src: local('Source Sans Pro'),
-    url(./Source_Sans_Pro/SourceSansPro-Regular.ttf) format('truetype');
+    url(./Assets/font/Source_Sans_Pro/SourceSansPro-Regular.ttf) format('truetype');
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: normal;
@@ -8,8 +8,16 @@
 
 @font-face {
   src: local('Source Sans Pro ExtraLight'),
-    url(./Source_Sans_Pro/SourceSansPro-ExtraLight.ttf) format('truetype');
+    url(./Assets/font/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf) format('truetype');
   font-family: 'Source Sans Pro ExtraLight';
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: local('Italiana'),
+    url(./Assets/font/Italiana/Italiana-Regular.ttf) format('truetype');
+  font-family: 'Italiana';
   font-style: normal;
   font-weight: normal;
 }

@@ -10,8 +10,9 @@ const Content = () => (
   <div className={css(styles.content)}>
     <NavBar />
     <AboutSection />
-    <div className={css(styles.shapeTop)} />
-    <div className={css(styles.shapeBottom)} />
+    <div className={css(styles.dividerContainer)}>
+      <div className={css(styles.divider)} />
+    </div>
     <SkillsSection />
     <ShowcaseSection />
     <ToolsSection />
@@ -33,20 +34,17 @@ const styles = StyleSheet.create({
       paddingTop: '25px',
     },
   },
-  shapeTop: {
-    width: '0',
-    height: '0',
-    margin: 'auto',
-    borderTop: '5vw solid #5c005c',
-    borderLeft: '100vw solid transparent',
-    borderRight: '300vw solid transparent',
+  dividerContainer: {
+    height: '50px',
+    overflow: 'hidden',
+    backgroundColor: '#333',
   },
-  shapeBottom: {
-    width: '0',
-    height: '0',
-    margin: 'auto',
-    borderBottom: '5vw solid #333',
-    borderLeft: '300vw solid transparent',
-    borderRight: '10vw solid transparent',
+  divider: {
+    width: 0,
+    height: 0,
+    borderTop: '100px solid #5c005c',
+    borderLeft: '100vw solid transparent',
   },
 });
+
+//rotate?
