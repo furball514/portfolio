@@ -10,15 +10,20 @@ const SkillsSection = () => (
       <h2 className={css(styles.heading)}>Skills</h2>
     </ScrollableAnchor>
     <div className={css(styles.container)}>
-      <div>
-        <img className={css(styles.jsLogo)} src={jsLogo} /> <p>JavaScript</p> <p>(ES5,ES6,ES7)</p>
+      <div className={css(styles.skill)}>
+        <img className={css(styles.jsLogo)} src={jsLogo} />
+        <p className={css(styles.skillName)}>JavaScript</p>
+        <p className={css(styles.skillName)}>(ES5,ES6,ES7)</p>
       </div>
-      <div>
-        <img className={css(styles.reactLogo)} src={reactLogo} /> <p>React</p>
+      <div className={css(styles.skill)}>
+        <img className={css(styles.reactLogo)} src={reactLogo} />
+        <p className={css(styles.skillName)}>React</p>
       </div>
-      <div>
+      <div className={css(styles.skill)}>
         <p className={css(styles.koaLogo)}>koa</p>
-        <p>Koa</p>
+        <p className={css(styles.skillName)} style={{ margin: 0, padding: 0 }}>
+          Koa
+        </p>
       </div>
     </div>
   </section>
@@ -52,17 +57,70 @@ const styles = StyleSheet.create({
     display: 'flex',
     width: '80%',
     justifyContent: 'space-between',
+    '@media (max-width: 480px)': {
+      flexDirection: 'column',
+      justifyContent: 'space-around',
+    },
   },
   jsLogo: {
-    height: '40px',
-    width: '40px',
+    height: '11vw',
+    width: '11vw',
+    display: 'block',
+    margin: '10px 0',
+    '@media (min-width: 720px)': {
+      height: '7vw',
+      width: '7vw',
+    },
+    '@media (min-width: 1300px)': {
+      height: '3.5vw',
+      width: '3.5vw',
+    },
   },
   reactLogo: {
-    height: '50px',
-    width: '50px',
+    height: '13.5vw',
+    width: '13.5vw',
+    display: 'block',
+    marginTop: '6px',
+    marginBottom: '4px',
+    marginLeft: 0,
+    marginRight: 0,
+    '@media (min-width: 720px)': {
+      height: '8.5vw',
+      width: '8.5vw',
+    },
+    '@media (min-width: 1300px)': {
+      height: '4vw',
+      width: '4vw',
+    },
   },
   koaLogo: {
-    fontSize: '30px',
+    fontSize: '11vw',
     fontFamily: 'Italiana',
+    display: 'block',
+    marginTop: '9px',
+    marginBottom: '3px',
+    marginLeft: 0,
+    marginRight: 0,
+    padding: 0,
+    textAlign: 'center',
+    '@media (min-width: 720px)': {
+      fontSize: '7vw',
+    },
+    '@media (min-width: 1300px)': {
+      fontSize: '3.5vw',
+    },
+  },
+  skill: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  skillName: {
+    marginTop: 0,
+    marginLeft: 0,
+    marginRight: 0,
+    marginBottom: '1px',
+    padding: 0,
+    display: 'block',
   },
 });

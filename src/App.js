@@ -40,3 +40,6 @@ const styles = StyleSheet.create({
 //control - invert - colors/themes/styles/desktop
 //about - names,born
 //showcase - gif/iframe - title,description,iconLinks,date
+
+//width inconsistencies,responsive
+//max-width

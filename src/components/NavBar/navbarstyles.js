@@ -4,8 +4,14 @@ const styles = StyleSheet.create({
   pageTitle: {
     color: 'white',
     backgroundColor: '#5c005c',
+    width: '100%',
     padding: '0 5%',
     height: '236px',
+    margin: '0 auto',
+    minWidth: '319px', //
+    '@media (max-width: 319px)': {
+      width: '319px',
+    },
     '@media (max-width: 480px)': {
       height: '200px',
     },
