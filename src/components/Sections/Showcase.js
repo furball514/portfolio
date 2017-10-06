@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import urlgif from '../../Assets/img/urlshort.gif';
+import tutorpug from '../../Assets/img/app.png';
 
 const ShowcaseSection = () => (
   <section className={css(styles.section)}>
@@ -8,9 +10,25 @@ const ShowcaseSection = () => (
       <h2 className={css(styles.heading)}>Showcase</h2>
     </ScrollableAnchor>
     <div className={css(styles.container)}>
-      <div className={css(styles.showcaseItem)} />
-      <div className={css(styles.showcaseItem)} />
-      <div className={css(styles.showcaseItem)} />
+      <div className={css(styles.showcaseItem)} style={{ backgroundColor: '#eaeaea' }}>
+        <iframe
+          height="250"
+          scrolling="no"
+          title="Simon Memory Game"
+          src="//codepen.io/furball/embed/preview/egGPeZ/?height=250&theme-id=0&default-tab=result&embed-version=2"
+          frameBorder="no"
+          allowTransparency="true"
+          allowFullScreen="true"
+        />
+        <div />
+      </div>
+      <div className={css(styles.showcaseItem)} style={{ backgroundColor: '#f4f4f4' }}>
+        <div />
+        <img src={urlgif} style={{ height: '100%', width: '40%' }} />
+      </div>
+      <div className={css(styles.showcaseItem)} style={{ backgroundColor: '#eaeaea' }}>
+        <img src={tutorpug} style={{ height: '100%', width: '40%' }} /> <div />
+      </div>
     </div>
   </section>
 );
@@ -19,7 +37,7 @@ export default ShowcaseSection;
 
 const styles = StyleSheet.create({
   section: {
-    backgroundColor: '#eaeaea',
+    backgroundColor: '#eff6fc',
     padding: '1px 5%',
     '@media (max-width: 480px)': {
       padding: '20px 5%',
@@ -39,10 +57,9 @@ const styles = StyleSheet.create({
     padding: 0,
   },
   showcaseItem: {
-    height: '100px',
-    backgroundColor: 'red',
-    width: '90%',
-    margin: '10px auto',
+    height: '250px',
+    width: '100%',
+    margin: '0 auto',
     padding: 0,
   },
 });

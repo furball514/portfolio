@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   pageTitle: {
     color: 'white',
     backgroundColor: '#5c005c',
-    width: '100%',
+    width: '90%',
     padding: '0 5%',
     height: '236px',
     margin: '0 auto',

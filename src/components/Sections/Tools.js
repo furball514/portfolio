@@ -14,7 +14,7 @@ export default ToolsSection;
 
 const styles = StyleSheet.create({
   section: {
-    backgroundColor: '#eaeaea',
+    backgroundColor: '#eff6fc',
     padding: '1px 5%',
     width: '100%',
     margin: 0,

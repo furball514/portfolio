@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     fontFamily: 'Source Sans Pro',
     width: '100%',
+    overflow: 'hidden',
     minWidth: '319px', //
     '@media (max-width: 319px)': {
       width: '319px',
