@@ -11,7 +11,8 @@ const AboutSection = () => (
       This is my coding portfolio!<br />I can be found online by the usernames <i>furball514</i>&nbsp;/&nbsp;
       <i>furball</i>&nbsp;&nbsp;or&nbsp;under the name <i>Carr Thicke</i>.
     </div>
-    <span>Born:&nbsp;&nbsp;March 2 2000</span>
+    <br />
+    <i>Born:&nbsp;&nbsp;March 2 2000</i>
   </section>
 );
 

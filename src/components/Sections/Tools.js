@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#eff6fc',
     padding: '1px 5%',
     width: '100%',
+    fontSize: '15px',
     margin: 0,
     minWidth: '319px', //
     '@media (max-width: 319px)': {

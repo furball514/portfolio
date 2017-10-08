@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
 //accessibility
 //~index.css~
 // jtt - fab (mobile)
+//cursive?
 
 //searchbox - render content or jump to footer
 //control - invert - colors/themes/styles/desktop

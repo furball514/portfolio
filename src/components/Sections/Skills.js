@@ -13,7 +13,7 @@ const SkillsSection = () => (
       <div className={css(styles.skill)}>
         <img className={css(styles.jsLogo)} src={jsLogo} />
         <p className={css(styles.skillName)}>JavaScript</p>
-        <p className={css(styles.skillName)}>(ES5,ES6,ES7)</p>
+        <i className={css(styles.skillName)}>(ES5,ES6,ES7)</i>
       </div>
       <div className={css(styles.skill)}>
         <img className={css(styles.reactLogo)} src={reactLogo} />
@@ -116,6 +116,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   skillName: {
+    fontSize: '15px',
     marginTop: 0,
     marginLeft: 0,
     marginRight: 0,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { Link } from 'office-ui-fabric-react/lib/Link';
 import urlgif from '../../Assets/img/urlshort.gif';
 import tutorpug from '../../Assets/img/app.png';
 import 'font-awesome/css/font-awesome.css';
@@ -19,48 +20,62 @@ const ShowcaseSection = () => (
           frameBorder="no"
           allowTransparency="true"
           allowFullScreen="true"
-          style={{ width: '40%', float: 'left', height: '250px' }}
+          className={css(styles.preview)}
         />
-        <div style={{ width: '60%', float: 'right', height: '250px' }}>
-          <h3>Simon Game</h3> One of my earliest attempts at coding, my version of the
-          <a>Simon Game</a> is a very simple memory game using HTML5, CSS3, and jQuery.
-          <a href="https://github.com/furball514/simon-game">
+        <div className={css(styles.showcase)}>
+          <h3 className={css(styles.title)}>Simon Game</h3> One of my earliest attempts at coding,
+          my version of the{' '}
+          <Link href="https://en.wikipedia.org/wiki/Simon_(game)" className={css(styles.link)}>
+            Simon Game
+          </Link>{' '}
+          is a very simple memory game using HTML5, CSS3, and jQuery.{'   '}
+          <Link href="https://github.com/furball514/simon-game" className={css(styles.link)}>
             <span className="fa fa-github" />
-          </a>
-          <a href="https://furball514.github.io/simon-game">
+          </Link>&nbsp;&nbsp;
+          <Link href="https://furball514.github.io/simon-game" className={css(styles.link)}>
             <span className="fa fa-link" />
-          </a>
-          Jan 2017
+          </Link>
+          <br />
+          <br />
+          <i>Jan 2017</i>
         </div>
       </div>
 
-      <div className={css(styles.showcaseItem)} style={{ backgroundColor: '#f4f4f4' }}>
-        <div style={{ width: '60%', float: 'left', height: '250px' }}>
-          <h3>URL Shortener</h3> A link shortening service in node.js using Pug and Material UI for
-          the front-end, Koa for the back-end, and MongoDB as database.
-          <a href="https://github.com/furball514/url_shortener_service">
+      <div className={css(styles.showcaseItem)} style={{ backgroundColor: '#f6fafd' }}>
+        <div className={css(styles.showcase)}>
+          <h3 className={css(styles.title)}>URL Shortener</h3> A link shortening service in node.js
+          using Pug and Material UI for the front-end, Koa for the back-end, and MongoDB as
+          database.{'   '}
+          <Link
+            href="https://github.com/furball514/url_shortener_service"
+            className={css(styles.link)}>
             <span className="fa fa-github" />
-          </a>
-          <a href="https://ee.glitch.me">
+          </Link>&nbsp;&nbsp;
+          <Link href="https://ee.glitch.me" className={css(styles.link)}>
             <span className="fa fa-link" />
-          </a>
-          May 2017
+          </Link>
+          <br />
+          <br />
+          <i>May 2017</i>
         </div>
-        <img src={urlgif} style={{ width: '40%', float: 'right', height: '250px' }} />
+        <img src={urlgif} className={css(styles.preview)} />
       </div>
 
       <div className={css(styles.showcaseItem)} style={{ backgroundColor: '#eaeaea' }}>
-        <img src={tutorpug} style={{ width: '40%', float: 'left', height: '250px' }} />
-        <div style={{ width: '60%', float: 'right', height: '250px' }}>
-          <h3>TutorPug</h3> A functional (mock) cross-platform 'find-a-tutor' mobile app. Uses React
-          Native and the Expo SDK for the front-end, Koa for the back-end, and MongoDB as database.
-          <a href="https://github.com/furball514/TutorPug">
+        <img src={tutorpug} className={css(styles.preview)} />
+        <div className={css(styles.showcase)}>
+          <h3 className={css(styles.title)}>TutorPug</h3> A functional (mock) cross-platform
+          'find-a-tutor' mobile app. Uses React Native and the Expo SDK for the front-end, Koa for
+          the back-end, and MongoDB as database.{'   '}
+          <Link href="https://github.com/furball514/TutorPug" className={css(styles.link)}>
             <span className="fa fa-github" />
-          </a>
-          <a href="https://expo.io/@furball514" style={{ color: 'grey', cursor: 'not-allowed' }}>
+          </Link>&nbsp;&nbsp;
+          <Link href="https://expo.io/@furball514" style={{ color: 'grey', cursor: 'not-allowed' }}>
             <span className="fa fa-link" />
-          </a>
-          Under development
+          </Link>
+          <br />
+          <br />
+          <i>Under development</i>
         </div>
       </div>
     </div>
@@ -73,6 +88,7 @@ const styles = StyleSheet.create({
   section: {
     backgroundColor: '#eff6fc',
     padding: '1px 5%',
+    fontSize: '15px',
     '@media (max-width: 480px)': {
       padding: '20px 5%',
     },
@@ -96,10 +112,28 @@ const styles = StyleSheet.create({
     margin: '0 auto',
     padding: 0,
   },
+  preview: {
+    width: '40%',
+    float: 'left',
+    height: '250px',
+  },
+  showcase: {
+    width: '60%',
+    float: 'left',
+    height: '250px',
+  },
+  title: {
+    fontSize: '21px',
+    color: '#5c005c',
+    fontFamily: 'Source Sans Pro ExtraLight',
+    fontWeight: 'bold',
+  },
+  link: {
+    color: '#5c005c',
+  },
 });
 
-/*magenta keywords
-
+/*
 * (iframe https://codepen.io/furball/pen/egGPeZ) Simon Game
   One of my earliest attempts at coding. My version of the <a>Simon Game</a> is a very simple memory game, utilising HTML5, CSS3, and jQuery.
   fa-github(https://github.com/furball514/simon-game), fa-link(https://furball514.github.io/simon-game)
