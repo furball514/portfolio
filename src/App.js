@@ -39,8 +39,5 @@ const styles = StyleSheet.create({
 
 //searchbox - render content or jump to footer
 //control - invert - colors/themes/styles/desktop
-//about - names,born
-//showcase - gif/iframe - title,description,iconLinks,date
-
-//width inconsistencies,responsive
+//responsive
 //max-width

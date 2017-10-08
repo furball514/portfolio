@@ -3,6 +3,7 @@ import { StyleSheet, css } from 'aphrodite';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import urlgif from '../../Assets/img/urlshort.gif';
 import tutorpug from '../../Assets/img/app.png';
+import 'font-awesome/css/font-awesome.css';
 
 const ShowcaseSection = () => (
   <section className={css(styles.section)}>
@@ -12,22 +13,55 @@ const ShowcaseSection = () => (
     <div className={css(styles.container)}>
       <div className={css(styles.showcaseItem)} style={{ backgroundColor: '#eaeaea' }}>
         <iframe
-          height="250"
           scrolling="no"
           title="Simon Memory Game"
           src="//codepen.io/furball/embed/preview/egGPeZ/?height=250&theme-id=0&default-tab=result&embed-version=2"
           frameBorder="no"
           allowTransparency="true"
           allowFullScreen="true"
+          style={{ width: '40%', float: 'left', height: '250px' }}
         />
-        <div />
+        <div style={{ width: '60%', float: 'right', height: '250px' }}>
+          <h3>Simon Game</h3> One of my earliest attempts at coding, my version of the
+          <a>Simon Game</a> is a very simple memory game using HTML5, CSS3, and jQuery.
+          <a href="https://github.com/furball514/simon-game">
+            <span className="fa fa-github" />
+          </a>
+          <a href="https://furball514.github.io/simon-game">
+            <span className="fa fa-link" />
+          </a>
+          Jan 2017
+        </div>
       </div>
+
       <div className={css(styles.showcaseItem)} style={{ backgroundColor: '#f4f4f4' }}>
-        <div />
-        <img src={urlgif} style={{ height: '100%', width: '40%' }} />
+        <div style={{ width: '60%', float: 'left', height: '250px' }}>
+          <h3>URL Shortener</h3> A link shortening service in node.js using Pug and Material UI for
+          the front-end, Koa for the back-end, and MongoDB as database.
+          <a href="https://github.com/furball514/url_shortener_service">
+            <span className="fa fa-github" />
+          </a>
+          <a href="https://ee.glitch.me">
+            <span className="fa fa-link" />
+          </a>
+          May 2017
+        </div>
+        <img src={urlgif} style={{ width: '40%', float: 'right', height: '250px' }} />
       </div>
+
       <div className={css(styles.showcaseItem)} style={{ backgroundColor: '#eaeaea' }}>
-        <img src={tutorpug} style={{ height: '100%', width: '40%' }} /> <div />
+        <img src={tutorpug} style={{ width: '40%', float: 'left', height: '250px' }} />
+        <div style={{ width: '60%', float: 'right', height: '250px' }}>
+          <h3>TutorPug</h3> A functional (mock) cross-platform 'find-a-tutor' mobile app. Uses React
+          Native and the Expo SDK for the front-end, Koa for the back-end, and MongoDB as database.
+          <a href="https://github.com/furball514/TutorPug">
+            <span className="fa fa-github" />
+          </a>
+          <a href="https://expo.io/@furball514" style={{ color: 'grey', cursor: 'not-allowed' }}>
+            <span className="fa fa-link" />
+          </a>
+          Under development
+        </div>
       </div>
     </div>
   </section>
