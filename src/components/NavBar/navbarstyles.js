@@ -26,6 +26,9 @@ const styles = StyleSheet.create({
       fontSize: '48px',
       paddingTop: '40px',
     },
+    '@media (min-width: 1300px)': {
+      fontSize: '96px',
+    },
   },
   list: {
     listStyleType: 'none',

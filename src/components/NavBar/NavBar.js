@@ -54,3 +54,5 @@ const navLinks = [
   { href: '#showcase', title: 'Showcase' },
   { href: '#tools', title: 'Tools' },
 ];
+
+//about hover

@@ -9,18 +9,18 @@ const ToolsSection = () => (
     <ScrollableAnchor id="tools">
       <h2 className={css(styles.heading)}>Some other tools I've dabbled with*</h2>
     </ScrollableAnchor>
-    <div>
-      &bull;&nbsp;HTML5&nbsp;,&nbsp;&bull;&nbsp;&nbsp;CSS3&nbsp;,&nbsp;&bull;&nbsp;&nbsp;React-Native&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Markdown&nbsp;,&nbsp;&bull;&nbsp;&nbsp;jQuery&nbsp;,
-      &bull;&nbsp;<TooltipHost
-        content="Bootstrap, Material, Animate, NativeBase, Fabric, FontAwesome, WeatherIcons, etc."
-        TooltipDelay="zero">
-        UIKits&nbsp;,
-      </TooltipHost>
-      &bull;&nbsp;Pug&nbsp;,&nbsp;&bull;&nbsp;&nbsp;git&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Unix Command
-      Line&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Chrome-Devtools&nbsp;,&nbsp;&bull;&nbsp;&nbsp;npm&nbsp;,&nbsp;&bull;&nbsp;&nbsp;MongoDB&nbsp;,&nbsp;&bull;&nbsp;&nbsp;nodejs&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Sass&nbsp;,&nbsp;&bull;&nbsp;&nbsp;C++&nbsp;,&nbsp;&bull;&nbsp;&nbsp;D3&nbsp;,&nbsp;&bull;&nbsp;&nbsp;AppleScript&nbsp;,
-      &bull;&nbsp;flow-typed&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Apache
-      Cordova&nbsp;,&nbsp;&bull;&nbsp;&nbsp;QBasic&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Visual Basic&nbsp;
-    </div>
+    &bull;&nbsp;HTML5&nbsp;,&nbsp;&bull;&nbsp;&nbsp;CSS3&nbsp;,&nbsp;&bull;&nbsp;&nbsp;React-Native&nbsp;,
+    &nbsp;&bull;&nbsp;&nbsp;Markdown&nbsp;,&nbsp;&bull;&nbsp;&nbsp;jQuery&nbsp;, &bull;&nbsp;<TooltipHost
+      content="Bootstrap, Material, Animate, NativeBase, Fabric, FontAwesome, WeatherIcons, etc."
+      TooltipDelay="zero">
+      UIKits&nbsp;,&nbsp;
+    </TooltipHost>
+    &bull;&nbsp;Pug&nbsp;,&nbsp;&bull;&nbsp;&nbsp;git&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Unix Command
+    Line&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Chrome-Devtools&nbsp;,&nbsp;&bull;&nbsp;&nbsp;npm&nbsp;,&nbsp;&bull;&nbsp;&nbsp;MongoDB&nbsp;,
+    &nbsp;&bull;&nbsp;&nbsp;nodejs&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Sass&nbsp;,&nbsp;&bull;&nbsp;&nbsp;C++&nbsp;,
+    &nbsp;&bull;&nbsp;&nbsp;D3&nbsp;,&nbsp;&bull;&nbsp;&nbsp;AppleScript&nbsp;,
+    &bull;&nbsp;flow-typed&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Apache
+    Cordova&nbsp;,&nbsp;&bull;&nbsp;&nbsp;QBasic&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Visual Basic&nbsp;
     <Label>*from most to least</Label>
   </section>
 );
@@ -30,7 +30,7 @@ export default ToolsSection;
 const styles = StyleSheet.create({
   section: {
     backgroundColor: '#eff6fc',
-    padding: '1px 5%',
+    padding: '60px 5%',
     width: '100%',
     fontSize: '15px',
     margin: 0,
@@ -41,6 +41,9 @@ const styles = StyleSheet.create({
     '@media (max-width: 480px)': {
       padding: '20px 5%',
     },
+    '@media (min-width: 1300px)': {
+      fontSize: '17px',
+    },
   },
   heading: {
     fontSize: '28px',
@@ -48,8 +51,12 @@ const styles = StyleSheet.create({
     '@media (max-width: 480px)': {
       fontSize: '21px',
     },
+    '@media (min-width: 1300px)': {
+      fontSize: '32px',
+    },
   },
 });
 
 //&bull;&nbsp;
 //npm?
+//overflow

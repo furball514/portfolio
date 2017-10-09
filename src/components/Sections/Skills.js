@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   section: {
     color: '#f8f8f8',
     backgroundColor: '#333',
-    padding: '1px 5%',
+    padding: '90px 5%',
     width: '100%',
     margin: 0,
     minWidth: '319px', //
@@ -52,49 +52,59 @@ const styles = StyleSheet.create({
     '@media (max-width: 480px)': {
       fontSize: '21px',
     },
+    '@media (min-width: 1300px)': {
+      fontSize: '32px',
+    },
   },
   container: {
     display: 'flex',
-    width: '80%',
+    width: '90%',
     justifyContent: 'space-between',
     '@media (max-width: 480px)': {
+      width: '80%',
       flexDirection: 'column',
       justifyContent: 'space-around',
     },
   },
   jsLogo: {
-    height: '11vw',
-    width: '11vw',
+    height: '16vw',
+    width: '16vw',
     display: 'block',
     margin: '10px 0',
     '@media (min-width: 720px)': {
+      height: '11vw',
+      width: '11vw',
+    },
+    '@media (min-width: 1300px)': {
       height: '7vw',
       width: '7vw',
     },
-    '@media (min-width: 1300px)': {
-      height: '3.5vw',
-      width: '3.5vw',
-    },
   },
   reactLogo: {
-    height: '13.5vw',
-    width: '13.5vw',
+    height: '20vw',
+    width: '20vw',
     display: 'block',
     marginTop: '6px',
     marginBottom: '4px',
     marginLeft: 0,
     marginRight: 0,
+    '@media (max-width: 480px)': {
+      marginTop: '15px',
+      marginBottom: '4px',
+    },
     '@media (min-width: 720px)': {
-      height: '8.5vw',
-      width: '8.5vw',
+      marginTop: 0,
+      marginBottom: 0,
+      height: '14vw',
+      width: '14vw',
     },
     '@media (min-width: 1300px)': {
-      height: '4vw',
-      width: '4vw',
+      height: '8vw',
+      width: '8vw',
     },
   },
   koaLogo: {
-    fontSize: '11vw',
+    fontSize: '16vw',
     fontFamily: 'Italiana',
     display: 'block',
     marginTop: '9px',
@@ -103,11 +113,15 @@ const styles = StyleSheet.create({
     marginRight: 0,
     padding: 0,
     textAlign: 'center',
+    '@media (max-width: 480px)': {
+      fontSize: '15vw',
+      marginBottom: 0,
+    },
     '@media (min-width: 720px)': {
-      fontSize: '7vw',
+      fontSize: '11vw',
     },
     '@media (min-width: 1300px)': {
-      fontSize: '3.5vw',
+      fontSize: '7vw',
     },
   },
   skill: {
@@ -123,5 +137,13 @@ const styles = StyleSheet.create({
     marginBottom: '1px',
     padding: 0,
     display: 'block',
+    '@media (max-width: 480px)': {
+      marginBottom: '5px',
+    },
+    '@media (min-width: 1300px)': {
+      fontSize: '17px',
+    },
   },
 });
+
+//even

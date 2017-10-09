@@ -16,6 +16,9 @@ const styles = StyleSheet.create({
     margin: '0 auto',
     display: 'flex',
     flexDirection: 'column',
+    '@media (min-width: 1300px)': {
+      fontSize: '17px',
+    },
   },
   footerContent: {
     width: '100%',
@@ -86,9 +89,15 @@ const styles = StyleSheet.create({
   heading: {
     fontWeight: 'bold',
     fontSize: '17px',
+    '@media (min-width: 1300px)': {
+      fontSize: '21px',
+    },
   },
   listItem: {
     marginBottom: '27px',
+    '@media (min-width: 1300px)': {
+      marginBottom: '40px',
+    },
   },
 });
 

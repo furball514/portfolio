@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { Link } from 'office-ui-fabric-react/lib/Link';
+import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
 import urlgif from '../../Assets/img/urlshort.gif';
 import tutorpug from '../../Assets/img/app.png';
 import 'font-awesome/css/font-awesome.css';
@@ -65,8 +66,13 @@ const ShowcaseSection = () => (
         <img src={tutorpug} className={css(styles.preview)} />
         <div className={css(styles.showcase)}>
           <h3 className={css(styles.title)}>TutorPug</h3> A functional (mock) cross-platform
-          'find-a-tutor' mobile app. Uses React Native and the Expo SDK for the front-end, Koa for
-          the back-end, and MongoDB as database.{'   '}
+          <TooltipHost
+            content="Including features like Social oAuth, Chat, Maps, Ratings, and InstaHelp"
+            delay="zero">
+            &nbsp;'find-a-tutor'
+          </TooltipHost>{' '}
+          mobile app. Uses React Native and the Expo SDK for the front-end, Koa for the back-end,
+          and MongoDB as database.{'   '}
           <Link href="https://github.com/furball514/TutorPug" className={css(styles.link)}>
             <span className="fa fa-github" />
           </Link>&nbsp;&nbsp;
@@ -87,10 +93,13 @@ export default ShowcaseSection;
 const styles = StyleSheet.create({
   section: {
     backgroundColor: '#eff6fc',
-    padding: '1px 5%',
+    padding: '90px 5%',
     fontSize: '15px',
     '@media (max-width: 480px)': {
       padding: '20px 5%',
+    },
+    '@media (min-width: 1300px)': {
+      fontSize: '17px',
     },
   },
   heading: {
@@ -98,6 +107,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Source Sans Pro ExtraLight',
     '@media (max-width: 480px)': {
       fontSize: '21px',
+    },
+    '@media (min-width: 1300px)': {
+      fontSize: '32px',
     },
   },
   container: {
@@ -127,6 +139,9 @@ const styles = StyleSheet.create({
     color: '#5c005c',
     fontFamily: 'Source Sans Pro ExtraLight',
     fontWeight: 'bold',
+    '@media (min-width: 1300px)': {
+      fontSize: '24px',
+    },
   },
   link: {
     color: '#5c005c',

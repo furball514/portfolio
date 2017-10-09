@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
       width: '319px',
     },
     '@media (max-width: 480px)': {
-      padding: '20px 5%',
+      padding: '40px 5%',
       fontSize: '15px',
     },
   },
