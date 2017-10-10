@@ -43,8 +43,8 @@ const ShowcaseSection = () => (
       </div>
 
       <div className={css(styles.showcaseItem)} style={{ backgroundColor: '#f6fafd' }}>
-        <div className={css(styles.showcase)}>
-          <h3 className={css(styles.title)}>URL Shortener</h3> A link shortening service in node.js
+        <div className={css(styles.showcase, styles.left)}>
+          <h3 className={css(styles.title)}>URL Shortener</h3> A link shortening service in NodeJS
           using Pug and Material UI for the front-end, Koa for the back-end, and MongoDB as
           database.{'   '}
           <Link
@@ -128,23 +128,37 @@ const styles = StyleSheet.create({
     width: '40%',
     float: 'left',
     height: '250px',
+    '@media (max-width: 480px)': {
+      width: '100%',
+    },
   },
   showcase: {
-    width: '60%',
-    float: 'left',
+    width: '54%',
+    padding: '1px 3%',
+    float: 'right',
     height: '250px',
+    '@media (max-width: 480px)': {
+      float: 'left',
+      width: '94%',
+    },
   },
   title: {
     fontSize: '21px',
     color: '#5c005c',
     fontFamily: 'Source Sans Pro ExtraLight',
     fontWeight: 'bold',
+    '@media (max-width: 480px)': {
+      fontSize: '17px',
+    },
     '@media (min-width: 1300px)': {
       fontSize: '24px',
     },
   },
   link: {
     color: '#5c005c',
+  },
+  left: {
+    float: 'left',
   },
 });
 
@@ -165,3 +179,6 @@ const styles = StyleSheet.create({
   Under development
 
 */
+
+
+//responsive

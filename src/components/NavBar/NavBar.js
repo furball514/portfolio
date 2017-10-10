@@ -55,4 +55,5 @@ const navLinks = [
   { href: '#tools', title: 'Tools' },
 ];
 
-//about hover
+//desktop hover
+//navbar

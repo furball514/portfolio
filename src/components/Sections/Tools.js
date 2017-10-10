@@ -7,7 +7,9 @@ import { Label } from 'office-ui-fabric-react/lib/Label';
 const ToolsSection = () => (
   <section className={css(styles.section)}>
     <ScrollableAnchor id="tools">
-      <h2 className={css(styles.heading)}>Some other tools I've dabbled with*</h2>
+      <h2 className={css(styles.heading)}>
+        Some other tools I've dabbled with<span style={{ color: '#a80000' }}>*</span>
+      </h2>
     </ScrollableAnchor>
     &bull;&nbsp;HTML5&nbsp;,&nbsp;&bull;&nbsp;&nbsp;CSS3&nbsp;,&nbsp;&bull;&nbsp;&nbsp;React-Native&nbsp;,
     &nbsp;&bull;&nbsp;&nbsp;Markdown&nbsp;,&nbsp;&bull;&nbsp;&nbsp;jQuery&nbsp;, &bull;&nbsp;<TooltipHost
@@ -21,7 +23,11 @@ const ToolsSection = () => (
     &nbsp;&bull;&nbsp;&nbsp;D3&nbsp;,&nbsp;&bull;&nbsp;&nbsp;AppleScript&nbsp;,
     &bull;&nbsp;flow-typed&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Apache
     Cordova&nbsp;,&nbsp;&bull;&nbsp;&nbsp;QBasic&nbsp;,&nbsp;&bull;&nbsp;&nbsp;Visual Basic&nbsp;
-    <Label>*from most to least</Label>
+    <br />
+    <br />
+    <Label style={{ color: '#666' }}>
+      <span style={{ color: '#a80000' }}>*</span>from most to least
+    </Label>
   </section>
 );
 
@@ -39,7 +45,10 @@ const styles = StyleSheet.create({
       width: '319px',
     },
     '@media (max-width: 480px)': {
-      padding: '20px 5%',
+      paddingTop: '200px',
+      paddingLeft: '5%',
+      paddingRight: '5%',
+      paddingBottom: '20px',
     },
     '@media (min-width: 1300px)': {
       fontSize: '17px',
