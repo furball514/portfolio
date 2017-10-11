@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
 import Header from './components/Header/Header';
 import Content from './components/Content';
 import Footer from './components/Footer/Footer';
 
-const App = () => (
-  <Fabric className={css(styles.container)}>
-    <Header />
-    <Content />
-    <Footer />
-  </Fabric>
-);
+export default class App extends Component {
+  componentDidMount() {
+    alert('This portfolio is still under development');
+  }
 
-export default App;
+  render() {
+    return (
+      <Fabric className={css(styles.container)}>
+        <Header />
+        <Content />
+        <Footer />
+      </Fabric>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {
