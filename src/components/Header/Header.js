@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { css } from 'aphrodite';
 import { TextField } from 'office-ui-fabric-react/lib/TextField';
 import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
@@ -16,11 +16,24 @@ const HeaderText = () => (
 
 const Search = () => <TextField className={css(styles.searchBox)} />;
 
-const Control = () => (
-  <div className={css(styles.control)}>
-    <p className={css(styles.white)}>Invert colors</p>&nbsp;&nbsp;&nbsp;<Toggle className={css(styles.toggle)} />
-  </div>
-);
+class Control extends Component {
+  state = {
+    inverted: false,
+  };
+
+  _onFocus() {
+    if (this.state.inverted) document.getElementById('root').style.filter = 'invert(100%)';
+    else document.getElementById('root').style.filter = 'initial';
+  }
+
+  render() {
+    return (
+      <div className={css(styles.control)}>
+        <p className={css(styles.white)}>Invert colors</p>&nbsp;&nbsp;&nbsp;<Toggle className={css(styles.toggle)} onFocus={this._onFocus()} />
+      </div>
+    );
+  }
+}
 
 const Header = () => (
   <header className={css(styles.header)}>

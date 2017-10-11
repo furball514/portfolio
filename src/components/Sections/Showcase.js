@@ -180,5 +180,4 @@ const styles = StyleSheet.create({
 
 */
 
-
 //responsive
