@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import NavBar from './NavBar/NavBar';
 import AboutSection from './Sections/About';
 import SkillsSection from './Sections/Skills';
 import ShowcaseSection from './Sections/Showcase';
@@ -8,7 +7,6 @@ import ToolsSection from './Sections/Tools';
 
 const Content = () => (
   <div className={css(styles.content)}>
-    <NavBar />
     <AboutSection />
     <div className={css(styles.dividerContainer)}>
       <div className={css(styles.divider)} />

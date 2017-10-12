@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     color: 'white',
     backgroundColor: '#5c005c',
     width: '90%',
+    transform: 'translate(0,-1px)',
     padding: '0 5%',
     height: '236px',
     margin: '0 auto',
@@ -14,6 +15,7 @@ const styles = StyleSheet.create({
     },
     '@media (max-width: 480px)': {
       height: '200px',
+      padding: '40px 5%',
     },
   },
   heading: {
@@ -61,7 +63,7 @@ const styles = StyleSheet.create({
       visibility: 'hidden',
     },
     '@media (max-width: 480px)': {
-      fontSize: '15px',
+      fontSize: '16px',
     },
   },
   /* fixed */
