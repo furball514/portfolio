@@ -14,7 +14,27 @@ const HeaderText = () => (
   </p>
 );
 
-const Search = () => <TextField className={css(styles.searchBox)} />;
+class Search extends Component {
+  state = {
+    value: '',
+  };
+
+  _handleInput(value) {
+    window.find(value);
+  }
+
+  render() {
+    return (
+      <TextField
+        className={css(styles.searchBox)}
+        placeholder="Start typing..."
+        value={this.state.value}
+        addonString="Search"
+        onChanged={value => this._handleInput(value)}
+      />
+    );
+  }
+}
 
 class Control extends Component {
   state = {
@@ -29,7 +49,11 @@ class Control extends Component {
   render() {
     return (
       <div className={css(styles.control)}>
-        <p className={css(styles.white)}>Invert colors</p>&nbsp;&nbsp;&nbsp;<Toggle className={css(styles.toggle)} onFocus={this._onFocus()} />
+        <p className={css(styles.white)}>Invert colors</p>&nbsp;&nbsp;&nbsp;<Toggle
+          className={css(styles.toggle)}
+          onFocus={this._onFocus()}
+          defaultChecked
+        />
       </div>
     );
   }
@@ -48,3 +72,5 @@ const Header = () => (
 );
 
 export default Header;
+
+//clearInput

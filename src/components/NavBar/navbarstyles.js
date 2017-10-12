@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     padding: '14px 1.5vw',
     textDecoration: 'none',
     fontFamily: 'Source Sans Pro ExtraLight',
-    fontSize: '17px',
+    fontSize: '18px',
     color: '#fff',
     fontWeight: 'bold',
     ':hover': {
@@ -74,14 +74,14 @@ const styles = StyleSheet.create({
     boxShadow: '0 10px 30px -10px rgba(0,0,0,0.5)',
     position: 'fixed',
     zIndex: 500,
-    height: '150px',
+    height: '200px',
     width: '100%',
   },
   fixedHeading: {
     fontFamily: 'Source Sans Pro ExtraLight',
     color: '#f8f8f8',
     transition: 'font-size 167ms cubic-bezier(.1,.9,.2,1)',
-    fontSize: '24px',
+    fontSize: '38px',
     paddingTop: '50px',
   },
   fixedLink: {
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     paddingRight: '2vw',
     textDecoration: 'none',
     fontFamily: 'Source Sans Pro ExtraLight',
-    fontSize: '15px',
+    fontSize: '17px',
     color: '#fff',
     fontWeight: 'bold',
     ':hover': {
