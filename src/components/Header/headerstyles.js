@@ -54,6 +54,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     fontFamily: 'Source Sans Pro',
     marginTop: '10px',
+    '@media (max-width: 520px)': {
+      width: '152px',
+    },
+    '@media (max-width: 480px)': {
+      width: '212px',
+    },
   },
   control: {
     display: 'flex',

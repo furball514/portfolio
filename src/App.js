@@ -1,19 +1,25 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
+import { configureAnchors } from 'react-scrollable-anchor';
 import Header from './components/Header/Header';
 import Content from './components/Content';
 import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
+import FixedActionButton from './components/FAB';
 
-const App = () => (
-  <Fabric className={css(styles.container)}>
-    <Header />
-    <NavBar />
-    <Content />
-    <Footer />
-  </Fabric>
-);
+const App = () => {
+  configureAnchors({ offset: -250, scrollDuration: 500 });
+  return (
+    <Fabric className={css(styles.container)}>
+      <Header />
+      <NavBar />
+      <Content />
+      <Footer />
+      <FixedActionButton />
+    </Fabric>
+  );
+};
 
 export default App;
 
