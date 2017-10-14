@@ -59,3 +59,9 @@ const styles = StyleSheet.create({
 //skillsize
 //enja
 //overflow
+//padding
+//370
+//divider
+//toggleinvertcolor
+//nvbaraffix
+//fontsiz

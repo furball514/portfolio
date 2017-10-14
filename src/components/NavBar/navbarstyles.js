@@ -2,6 +2,7 @@ import { StyleSheet } from 'aphrodite';
 
 const styles = StyleSheet.create({
   pageTitle: {
+    overflow: 'hidden',
     color: 'white',
     backgroundColor: '#5c005c',
     width: '90%',

@@ -31,3 +31,5 @@ body {
 .invert {
   filter: invert(100%);
 }
+
+/*::not*/

@@ -60,6 +60,9 @@ const styles = StyleSheet.create({
     '@media (max-width: 480px)': {
       width: '212px',
     },
+    '@media (max-width: 370px)': {
+      width: '152px',
+    },
   },
   control: {
     display: 'flex',

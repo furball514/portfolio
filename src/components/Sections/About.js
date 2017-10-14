@@ -7,7 +7,7 @@ const AboutSection = () => (
     <ScrollableAnchor id="about">
       <h2 className={css(styles.heading)}>About</h2>
     </ScrollableAnchor>
-    <div>
+    <div style={{ overflow: 'scroll' }}>
       This is my coding portfolio!<br />I can be found online by the usernames <i>furball514</i>&nbsp;/&nbsp;
       <i>furball</i>&nbsp;&nbsp;or&nbsp;under the name <i>Carr Thicke</i>.
     </div>

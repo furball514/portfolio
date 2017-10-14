@@ -54,6 +54,7 @@ const Footer = () => (
     </div>
     <div className={css(styles.footerText)}>
       {/*This Site Is Compatible With Safari Reader View*/}
+      What should I put here?
     </div>
   </footer>
 );
