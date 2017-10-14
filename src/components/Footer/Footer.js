@@ -52,7 +52,9 @@ const Footer = () => (
       <LeftFooter />
       <RightFooter />
     </div>
-    <div className={css(styles.footerText)}>This Site Is Compatible With Safari Reader View</div>
+    <div className={css(styles.footerText)}>
+      {/*This Site Is Compatible With Safari Reader View*/}
+    </div>
   </footer>
 );
 
