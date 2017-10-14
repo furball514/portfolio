@@ -36,28 +36,14 @@ class Search extends Component {
   }
 }
 
-class Control extends Component {
-  state = {
-    inverted: false,
-  };
-
-  _onFocus() {
-    if (this.state.inverted) document.getElementById('root').style.filter = 'invert(100%)';
-    else document.getElementById('root').style.filter = 'initial';
-  }
-
-  render() {
-    return (
-      <div className={css(styles.control)}>
-        <p className={css(styles.white)}>Invert colors</p>&nbsp;&nbsp;&nbsp;<Toggle
-          className={css(styles.toggle)}
-          onFocus={this._onFocus()}
-          defaultChecked
-        />
-      </div>
-    );
-  }
-}
+const Control = () => (
+  <div className={css(styles.control)}>
+    <p className={css(styles.white)}>Invert colors</p>&nbsp;&nbsp;&nbsp;<Toggle
+      className={css(styles.toggle)}
+      onChanged={() => document.getElementById('root').classList.toggle('invert')}
+    />
+  </div>
+);
 
 const Header = () => (
   <header className={css(styles.header)}>

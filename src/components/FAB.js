@@ -16,7 +16,7 @@ export default class FixedActionButton extends Component {
   handleScroll() {
     let hidden;
     if (window.scrollY < 158) hidden = true;
-    else if (window.scrollY > 1700) hidden = true;
+    else if (window.scrollY > 1400) hidden = true;
     else hidden = false;
     this.setState({ hidden });
   }
@@ -51,3 +51,4 @@ const styles = StyleSheet.create({
 });
 
 //scroll
+//footer

@@ -50,3 +50,11 @@ const styles = StyleSheet.create({
 //control - invert - colors/themes/styles/desktop
 //responsive
 //max-width
+
+//firefoxmob
+//smg
+//fontweight
+//headingspace
+//colors
+//skillsize
+//enja
