@@ -15,7 +15,9 @@ const styles = StyleSheet.create({
     },
     '@media (max-width: 480px)': {
       height: '200px',
-      padding: '40px 5%',
+      padding: '30px 5%',
+      position: 'relative',
+      top: 25,
     },
   },
   heading: {
