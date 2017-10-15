@@ -56,4 +56,3 @@ const navLinks = [
 ];
 
 //desktop hover
-//navbar

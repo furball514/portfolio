@@ -19,10 +19,6 @@ class Search extends Component {
     value: '',
   };
 
-  _handleInput(value) {
-    window.find(value);
-  }
-
   render() {
     return (
       <TextField
@@ -30,7 +26,7 @@ class Search extends Component {
         placeholder="Start typing..."
         value={this.state.value}
         addonString="Search"
-        onChanged={value => this._handleInput(value)}
+        onChanged={value => this.setState({ value })}
       />
     );
   }
