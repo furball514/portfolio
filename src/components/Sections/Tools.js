@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
       width: '319px',
     },
     '@media (max-width: 480px)': {
-      paddingTop: '200px',
+      paddingTop: '1px',
       paddingLeft: '5%',
       paddingRight: '5%',
       paddingBottom: '20px',

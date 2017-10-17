@@ -123,13 +123,20 @@ const styles = StyleSheet.create({
     width: '100%',
     margin: '0 auto',
     padding: 0,
+    '@media (max-width: 480px)': {
+      height: '400px',
+      display: 'table',
+      marginBottom: '20px',
+    },
   },
   preview: {
     width: '40%',
     float: 'left',
     height: '250px',
     '@media (max-width: 480px)': {
+      float: 'none',
       width: '100%',
+      display: 'table-header-group',
     },
   },
   showcase: {
@@ -138,8 +145,9 @@ const styles = StyleSheet.create({
     float: 'right',
     height: '250px',
     '@media (max-width: 480px)': {
-      float: 'left',
-      width: '94%',
+      float: 'none',
+      width: '100%',
+      display: 'table-footer-group',
     },
   },
   title: {
@@ -156,6 +164,9 @@ const styles = StyleSheet.create({
   },
   link: {
     color: '#5c005c',
+    '@media (max-width: 480px)': {
+      padding: '4px',
+    },
   },
   left: {
     float: 'left',
@@ -181,3 +192,4 @@ const styles = StyleSheet.create({
 */
 
 //responsive
+//padding

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
 import { configureAnchors } from 'react-scrollable-anchor';
@@ -8,24 +8,20 @@ import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import FixedActionButton from './components/FAB';
 
-export default class App extends Component {
-  componentDidMount() {
-    alert('This portfolio is still under development.');
-  }
+const App = () => {
+  configureAnchors({ offset: -250, scrollDuration: 500 });
+  return (
+    <Fabric className={css(styles.container)}>
+      <Header />
+      <NavBar />
+      <Content />
+      <Footer />
+      <FixedActionButton />
+    </Fabric>
+  );
+};
 
-  render() {
-    configureAnchors({ offset: -250, scrollDuration: 500 });
-    return (
-      <Fabric className={css(styles.container)}>
-        <Header />
-        <NavBar />
-        <Content />
-        <Footer />
-        <FixedActionButton />
-      </Fabric>
-    );
-  }
-}
+export default App;
 
 const styles = StyleSheet.create({
   container: {
