@@ -11,12 +11,12 @@ const SkillsSection = () => (
     </ScrollableAnchor>
     <div className={css(styles.container)}>
       <div className={css(styles.skill)}>
-        <img className={css(styles.jsLogo)} src={jsLogo} />
+        <img alt="" className={css(styles.jsLogo)} src={jsLogo} />
         <p className={css(styles.skillName)}>JavaScript</p>
         <i className={css(styles.skillName)}>(ES5,ES6,ES7)</i>
       </div>
       <div className={css(styles.skill)}>
-        <img className={css(styles.reactLogo)} src={reactLogo} />
+        <img alt="" className={css(styles.reactLogo)} src={reactLogo} />
         <p className={css(styles.skillName)}>React</p>
       </div>
       <div className={css(styles.skill)}>
@@ -71,6 +71,10 @@ const styles = StyleSheet.create({
     width: '16vw',
     display: 'block',
     margin: '10px 0',
+    '@media (max-width: 480px)': {
+      height: '20vw',
+      width: '20vw',
+    },
     '@media (min-width: 720px)': {
       height: '11vw',
       width: '11vw',
@@ -91,6 +95,8 @@ const styles = StyleSheet.create({
     '@media (max-width: 480px)': {
       marginTop: '15px',
       marginBottom: '4px',
+      height: '24vw',
+      width: '24vw',
     },
     '@media (min-width: 720px)': {
       marginTop: 0,
@@ -114,7 +120,6 @@ const styles = StyleSheet.create({
     padding: 0,
     textAlign: 'center',
     '@media (max-width: 480px)': {
-      fontSize: '15vw',
       marginBottom: 0,
     },
     '@media (min-width: 720px)': {

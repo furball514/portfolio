@@ -26,14 +26,23 @@ const ShowcaseSection = () => (
         <div className={css(styles.showcase)}>
           <h3 className={css(styles.title)}>Simon Game</h3> One of my earliest attempts at coding,
           my version of the{' '}
-          <Link href="https://en.wikipedia.org/wiki/Simon_(game)" className={css(styles.link)}>
+          <Link
+            href="https://en.wikipedia.org/wiki/Simon_(game)"
+            className={css(styles.link)}
+            aria-label="link to wikipedia(simon game)">
             Simon Game
           </Link>{' '}
           is a very simple memory game using HTML5, CSS3, and jQuery.{'   '}
-          <Link href="https://github.com/furball514/simon-game" className={css(styles.link)}>
+          <Link
+            href="https://github.com/furball514/simon-game"
+            className={css(styles.link)}
+            aria-label="link to code repository(simon game)">
             <span className="fa fa-github" />
           </Link>&nbsp;&nbsp;
-          <Link href="https://furball514.github.io/simon-game" className={css(styles.link)}>
+          <Link
+            href="https://furball514.github.io/simon-game"
+            className={css(styles.link)}
+            aria-label="simon game webpage">
             <span className="fa fa-link" />
           </Link>
           <br />
@@ -49,21 +58,25 @@ const ShowcaseSection = () => (
           database.{'   '}
           <Link
             href="https://github.com/furball514/url_shortener_service"
-            className={css(styles.link)}>
+            className={css(styles.link)}
+            aria-label="link to code repository(url shortener)">
             <span className="fa fa-github" />
           </Link>&nbsp;&nbsp;
-          <Link href="https://ee.glitch.me" className={css(styles.link)}>
+          <Link
+            href="https://ee.glitch.me"
+            className={css(styles.link)}
+            aria-label="url shortener webpage">
             <span className="fa fa-link" />
           </Link>
           <br />
           <br />
           <i>May 2017</i>
         </div>
-        <img src={urlgif} className={css(styles.preview)} />
+        <img alt="" src={urlgif} className={css(styles.preview)} />
       </div>
 
       <div className={css(styles.showcaseItem)} style={{ backgroundColor: '#eaeaea' }}>
-        <img src={tutorpug} className={css(styles.preview)} />
+        <img alt="" src={tutorpug} className={css(styles.preview)} />
         <div className={css(styles.showcase)}>
           <h3 className={css(styles.title)}>TutorPug</h3> A functional (mock) cross-platform
           <TooltipHost
@@ -73,10 +86,16 @@ const ShowcaseSection = () => (
           </TooltipHost>{' '}
           mobile app. Uses React Native and the Expo SDK for the front-end, Koa for the back-end,
           and MongoDB as database.{'   '}
-          <Link href="https://github.com/furball514/TutorPug" className={css(styles.link)}>
+          <Link
+            href="https://github.com/furball514/TutorPug"
+            className={css(styles.link)}
+            aria-label="link to code repository(TutorPug)">
             <span className="fa fa-github" />
           </Link>&nbsp;&nbsp;
-          <Link href="https://expo.io/@furball514" style={{ color: 'grey', cursor: 'not-allowed' }}>
+          <Link
+            href="https://expo.io/@furball514"
+            style={{ color: 'grey', cursor: 'not-allowed' }}
+            aria-label="expo user page">
             <span className="fa fa-link" />
           </Link>
           <br />

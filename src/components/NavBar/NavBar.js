@@ -12,7 +12,7 @@ export default class NavBar extends Component {
   }
 
   handleScroll() {
-    const fixed = window.scrollY >= 158;
+    const fixed = window.scrollY >= 258; //158
     this.setState({ fixed });
   }
 

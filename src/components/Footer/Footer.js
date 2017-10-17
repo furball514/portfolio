@@ -52,7 +52,7 @@ const Footer = () => (
       <LeftFooter />
       <RightFooter />
     </div>
-    <div className={css(styles.footerText)}>
+    <div className={css(styles.footerText)} aria-hidden>
       {/*This Site Is Compatible With Safari Reader View*/}
       What should I put here?
     </div>

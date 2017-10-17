@@ -26,6 +26,7 @@ class Search extends Component {
         placeholder="Start typing..."
         value={this.state.value}
         addonString="Search"
+        ariaLabel="find in page"
         onChanged={value => this.setState({ value })}
       />
     );
@@ -37,6 +38,8 @@ const Control = () => (
     <p className={css(styles.white)}>Invert colors</p>&nbsp;&nbsp;&nbsp;<Toggle
       className={css(styles.toggle)}
       onChanged={() => document.getElementById('root').classList.toggle('invert')}
+      offAriaLabel="colors righted"
+      onAriaLabel="colors inverted"
     />
   </div>
 );

@@ -16,14 +16,19 @@ export default class FixedActionButton extends Component {
   handleScroll() {
     let hidden;
     if (window.scrollY < 158) hidden = true;
-    else if (window.scrollY > 1400) hidden = true;
+    else if (window.scrollY > document.body.clientHeight - 800)
+      hidden = true; //1400
     else hidden = false;
     this.setState({ hidden });
   }
 
   render() {
     return this.state.hidden ? null : (
-      <DefaultButton primary className={css(styles.fab)} onClick={() => goToTop()}>
+      <DefaultButton
+        primary
+        className={css(styles.fab)}
+        onClick={() => goToTop()}
+        ariaLabel="go to top">
         <span className="fa fa-angle-double-up fa-2x" />
       </DefaultButton>
     );
@@ -39,7 +44,7 @@ const styles = StyleSheet.create({
     bottom: '20px',
     zIndex: 600,
     boxShadow: '0 10px 30px -10px rgba(0,0,0,2)',
-    transform: 'scale(0.5,0.7)',
+    transform: 'scale(0.6,1)', //0.5 0.7
     ':hover': {
       zIndex: 100,
       boxShadow: 'none',
