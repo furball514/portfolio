@@ -183,6 +183,9 @@ const styles = StyleSheet.create({
   },
   link: {
     color: '#5c005c',
+    ':hover': {
+      textDecoration: 'underline',
+    },
     '@media (max-width: 480px)': {
       padding: '4px',
     },
