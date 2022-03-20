@@ -8,11 +8,6 @@ import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import FixedActionButton from './components/FAB';
 
-export default class App extends Component {
-  componentDidMount() {
-    alert('This portfolio is still under development.');
-  }
-
   render() {
     configureAnchors({ offset: -250, scrollDuration: 500 });
     return (
