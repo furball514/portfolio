@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var audio = $('#gg')[0];
   $('nav li').mouseenter(function() {
-    audio.play();
+   // audio.play();
   });
 
   $('#theme').click(function() {
